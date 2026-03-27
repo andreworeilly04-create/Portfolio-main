@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Andrew O'Reilly</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/andrew.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "YOUR_PUBLIC_KEY",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+        <nav class="nav__container">
+            <figure>
+                <a href="#landing-page"><img id="personal-logo" src="assets/AO Logo.jpg" alt="AO Logo"></a>
+            </figure>
+
+            <ul class="nav_link--list">
+                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black"
+                        href="#about">About</a>
+                </li>
+                <li class="nav__link"><a class="nav__link--anchor link__hover-effect--black"
+                        href="#projects">Projects</a></li>
+                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black"
+                        href="#contact">Contact</a>
+                </li>
+                <li class="nav__link" onclick="toggleContrast()"><a class="nav__link--anchor link__hover-effect--black"
+                        href="#"><i class="fa-solid fa-moon"></i></a></li>
+            </ul>
+
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="mobile__menu">
+                <li class="nav__link" onclick="toggleModal()"><a class="mobile__link--anchor link__hover-effect--black"
+                        href="#about">About</a>
+                </li>
+                <li class="nav__link"><a class="mobile__link--anchor link__hover-effect--black"
+                        href="#projects">Projects</a></li>
+
+                <li class="nav__link" onclick="toggleModal()"><a class="mobile__link--anchor link__hover-effect--black"
+                        href="#contact">Contact</a>
+                </li>
+                <li><button class="close__menu close__btn--menu" onclick="closeMenu()">
+                <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+                </li>
+            </ul>
+
+            <button class="toggle-theme" onclick="toggleContrast()">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="toggle-dark" onclick="toggleContrast()">
+                
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
+            <ul class="dark_link--list">
+                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black"
+                        href="#about">About</a>
+                </li>
+                <li class="nav__link"><a class="nav__link--anchor link__hover-effect--black"
+                        href="#projects">Projects</a></li>
+                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black"
+                        href="#contact">Contact</a>
+                </li>
+                <li class="nav__link" onclick="toggleContrast()"><a class="nav__link--anchor link__hover-effect--black" href="#"><i class="fa-solid fa-sun"></i></a></li>
+            </ul>
+
+            <img src="assets/semi circle.svg" class="shape shape--0" alt="Semi Circle">
+            <img src="assets/circle.svg" class="shape shape--1" alt="Circle">
+            <img src="assets/squiggly.svg" class="shape shape--2" alt="Squiggly">
+            <img src="assets/circle.svg" class="shape shape--3" alt="Circle">
+            <img src="assets/triangle.svg" class="shape shape--4" alt="Triangle">
+            <img src="assets/circle.svg" class="shape shape--5" alt="Circle">
+            <img src="assets/squiggly.svg" class="shape shape--6" alt="Squiggly">
+            <img src="assets/circle.svg" class="shape shape--7" alt="Circle">
+            <img src="assets/semi circle.svg" class="shape shape--8" alt="Semi Circle">
+
+        </nav>
+        <div class="header__container">
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hey</h1>
+                <h1 class="title title--secondary">I'm Andrew</h1>
+                <p class="header__para">I'm a <b class="navy">Frontend Web Developer</b> with a passion for creating
+                    engaging and user-friendly web experiences. I'm always looking for new challenges <br> and
+                    opportunities to grow as a developer.<br></p>
+    
+                <p class="header__para">Here's a bit <b class="navy_blue about__me--link" onclick="toggleModal()"> about
+                        me</b></p>
+                <div class="social__list">
+                    <a href="https://www.linkedin.com/in/andrew-o-reilly-886a47384/" target="_blank"
+                        class="social__link click"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/repos" target="_blank" class="social__link click"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="" target="_blank" class="social__link click"><i class="fa-solid fa-file-pdf"></i></a>
+                </div>
+            </div>
+        </header>
+        </div>
+        <a href="#"> <button class="mail__btn click" onclick="toggleModal()">
+                <i class="fa-solid fa-envelope"></i></button>
+            </a>
+            <div class="scroll__container">
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
+        </div>
+        <div class="modal">
+            <div class="modal_half modal__about">
+                <h2 class="modal__title modal__title--about">Here a bit about me.</h2>
+                <h3 class="modal__sub-title modal__sub-title--about">Frontend Web Developer</h3>
+                <p class="modal__para">I'm a passionate <b class="navy_blue">frontend web developer</b> with experience
+                    in creating <b class="navy_blue">responsive and user-friendly web applications</b>. <br>
+                    I currently work as a <b class="navy_blue">frontend developer</b> at a tech company, where I
+                    collaborate with designers and backend developers to build <b class="navy_blue">seamless user
+                        experiences.</b> <br>
+                </p>
+                <div class="modal__images">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="assets/html.svg" alt="HTML5 Logo">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="assets/css.svg" alt="CSS3 Logo">
+                        <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="assets/js.svg" alt="JavaScript Logo">
+                        <span class="language__name">JavaScript</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="assets/react.png" alt="React Logo">
+                        <span class="language__name">React</span>
+                    </figure>
+                </div>
+            </div>
+            <div class="modal_half modal__contact">
+                <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+                <h4 class="modal__sub-title modal__sub-title--contact"> I'm currently open to new opportunities. I'd
+                    love to hear from you!</h4>
+                <form id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input class="input" name="email" type="text">
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" name="message" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">Send Message</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    <p class="success__message">Message sent successfully!</p>
+                </div>
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+            </div> 
+        </div>
+
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="navy_blue">Projects</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="assets/library.png" class="project__img" alt="Library Website">
+                            <div class="project__wrapper--bg">
+                            </div>
+                            <div class="project__description">
+                                <h2 class="project__description--title">
+                                    Library Project
+                                </h2>
+                                <h3 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript
+                                </h3>
+                                <p class="project__description--para">
+                                    A library website built with HTML, CSS, and JavaScript. It features a responsive
+                                    design and allows users to browse and search for books, view book details, and
+                                    manage their library account.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://library-six-pied.vercel.app" target="_blank"
+                                        class="project__description--link"><i class="fa fa-globe"
+                                            aria-hidden="true"></i></a>
+                                    <a href="https://github.com/andreworeilly04-create/Library" target="_blank"
+                                        class="project__description--link"><i class="fa-brands fa-github"
+                                            aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+
+
+                <figure>
+                    <a href="#landing-page"><img src="assets/AO Logo.jpg" class="footer__logo--img" alt="AO Logo"></a>
+                </figure>
+                <div class="footer__social--list">
+                    <a href="https://github.com/repos"
+                        class="footer__social--link link__hover-effect--black link__hover-effect--white"
+                        target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/andrew-o-reilly-886a47384"
+                        class="footer__social--link link__hover-effect--black link__hover-effect--white"
+                        target="_blank">LinkedIn</a>
+                    <a href="#" class="footer__social--link link__hover-effect--black link__hover-effect--white"
+                        target="_blank">Email</a>
+                    <a href="#" class="footer__social--link link__hover-effect--black link__hover-effect--white"
+                        target="_blank">Resume</a>
+                </div>
+                <div class="footer__copyright">
+                    <p>&copy; 2026 Andrew O'Reilly. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
