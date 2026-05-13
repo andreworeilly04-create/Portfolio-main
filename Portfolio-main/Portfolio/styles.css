@@ -193,7 +193,7 @@ textarea:focus {
 }
 
 .btn__menu{
-    background-color:rgb(145, 228, 255);
+    background-color:lightblue;
     border:none;
     color:black;
     font-size:40px;
@@ -736,6 +736,10 @@ footer {
     color: white;
 }
 
+.dark-theme .nav__container{
+    background-color:darkblue;
+}
+
 .dark-theme section {
     background-color: rgb(1, 4, 41);
 }
@@ -745,7 +749,7 @@ footer {
 }
 
 .dark-theme .scroll__icon,
-.dark-theme .nav__container {
+ {
     border-color: white;
 }
 
@@ -766,6 +770,11 @@ footer {
 .dark-theme .mail__btn {
     background-color: rgb(255, 208, 122);
     color: black;
+}
+
+.dark-theme .btn__menu{
+    background-color:darkblue;
+
 }
 
 .dark-theme .link__hover-effect--black {
