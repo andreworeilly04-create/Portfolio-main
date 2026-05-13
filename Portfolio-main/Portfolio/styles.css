@@ -737,7 +737,7 @@ footer {
 }
 
 .dark-theme .nav__container{
-    background-color:darkblue;
+      background-color:rgb(145, 228, 255)
 }
 
 .dark-theme section {
@@ -772,10 +772,6 @@ footer {
     color: black;
 }
 
-.dark-theme .btn__menu{
-    background-color:darkblue;
-
-}
 
 .dark-theme .link__hover-effect--black {
     color: white;
