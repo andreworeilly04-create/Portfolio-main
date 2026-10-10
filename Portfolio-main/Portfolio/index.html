@@ -9,7 +9,8 @@
     <title>Andrew O'Reilly | Full-Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/andrew.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Updated FontAwesome CDN to prevent square icon rendering bugs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="script.js" defer></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -24,7 +25,7 @@
 <body>
     <section id="landing-page" onmousemove="moveBackground(event)">
         <nav class="nav__container">
-            <figure>
+            <figure class="nav__logo--wrapper">
                 <a href="#landing-page"><img id="personal-logo" src="assets/AO Logo.png" alt="AO Logo"></a>
             </figure>
 
@@ -35,7 +36,7 @@
                 <li class="nav__link" onclick="toggleContrast()"><a class="nav__link--anchor link__hover-effect--black" href="#"><i class="fa-solid fa-moon"></i></a></li>
             </ul>
 
-            <button class="btn__menu" onclick="openMenu()">
+            <button class="btn__menu" onclick="openMenu()" aria-label="Open menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
@@ -44,16 +45,16 @@
                 <li class="nav__link"><a class="mobile__link--anchor link__hover-effect--black" href="#projects" onclick="closeMenu()">Projects</a></li>
                 <li class="nav__link" onclick="toggleModal(); closeMenu();"><a class="mobile__link--anchor link__hover-effect--black" href="#contact">Contact</a></li>
                 <li>
-                    <button class="close__menu close__btn--menu" onclick="closeMenu()">
+                    <button class="close__menu close__btn--menu" onclick="closeMenu()" aria-label="Close menu">
                         <i class="fa-solid fa-circle-xmark"></i>
                     </button>
                 </li>
             </ul>
 
-            <button class="toggle-theme" onclick="toggleContrast()">
+            <button class="toggle-theme" onclick="toggleContrast()" aria-label="Toggle dark mode">
                 <i class="fa-solid fa-moon"></i>
             </button>
-            <button class="toggle-dark" onclick="toggleContrast()">
+            <button class="toggle-dark" onclick="toggleContrast()" aria-label="Toggle light mode">
                 <i class="fa-solid fa-sun"></i>
             </button>
 
