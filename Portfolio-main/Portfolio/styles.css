@@ -951,6 +951,16 @@ footer {
     color: white;
 }
 
+.dark-theme .navy,
+.dark-theme .navy_blue,
+.dark-theme .about__me--link {
+    color: rgb(255, 208, 122);
+}
+
+.dark-theme .project__description--sub-title {
+    color: rgb(255, 208, 122);
+}
+
 .dark-theme section {
     background-color: rgb(1, 4, 41);
 }
@@ -969,12 +979,6 @@ footer {
 }
 
 .dark-theme .title--secondary {
-    color: rgb(255, 208, 122);
-}
-
-.dark-theme .navy,
-.dark-theme .navy__blue,
-.dark-theme .about__me--link {
     color: rgb(255, 208, 122);
 }
 
