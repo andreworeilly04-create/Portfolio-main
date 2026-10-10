@@ -291,7 +291,8 @@ textarea:focus {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    width: 100%;
 }
 
 .header__para {
