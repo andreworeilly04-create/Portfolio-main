@@ -953,7 +953,8 @@ footer {
 
 .dark-theme .navy,
 .dark-theme .navy_blue,
-.dark-theme .about__me--link {
+.dark-theme .about__me--link,
+.dark-theme .about__details .navy_blue {
     color: rgb(255, 208, 122);
 }
 
