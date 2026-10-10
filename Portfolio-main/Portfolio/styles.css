@@ -398,6 +398,85 @@ textarea:focus {
     height: 8px;
 }
 
+/* Tech Stack Carousel */
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.08);
+    padding: 16px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.carousel-track {
+    display: inline-flex;
+    gap: 40px;
+    animation: scroll-carousel 25s linear infinite;
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    color: navy;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.carousel-item i {
+    font-size: 18px;
+}
+
+@keyframes scroll-carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* About Section */
+#about {
+    background-color: rgb(123, 194, 245);
+}
+
+.about__content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about__img--wrapper {
+    flex: 0 0 280px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile__placeholder-circle {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    border: 4px solid navy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.profile__placeholder-circle i {
+    font-size: 90px;
+    color: navy;
+}
+
+.about__details {
+    flex: 1;
+}
+
 /* Animations */
 
 @keyframes scroll {
@@ -562,8 +641,9 @@ textarea:focus {
     left: 50%;
     transform: translate(-50%, -50%) scale(0.95);
     width: 90%;
-    max-width: 1050px;
-    height: 650px;
+    max-width: 600px;
+    height: auto;
+    max-height: 90vh;
     visibility: hidden;
     border-radius: 24px;
     overflow: hidden;
@@ -592,8 +672,8 @@ textarea:focus {
 }
 
 .modal_half {
-    width: 50%;
-    padding: 50px 60px;
+    width: 100%;
+    padding: 50px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -608,14 +688,9 @@ textarea:focus {
     margin-top: 10px;
 }
 
-.modal__about {
-    background-color: rgb(186, 226, 255);
-    transform: translateX(-100%);
-}
-
 .modal__contact {
     background-color: rgb(123, 194, 245);
-    transform: translateX(100%);
+    transform: scale(0.9);
 }
 
 .modal__language {
@@ -718,9 +793,8 @@ textarea:focus {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.modal--open .modal__about,
 .modal--open .modal__contact {
-    transform: translateX(0%);
+    transform: scale(1);
 }
 
 .fa-spinner {
@@ -792,7 +866,8 @@ footer {
 .dark-theme .section__title,
 .dark-theme .section_sub-title,
 .dark-theme .nav__link--anchor,
-.dark-theme .header__para {
+.dark-theme .header__para,
+.dark-theme .about__details p {
     color: white;
 }
 
@@ -862,6 +937,10 @@ footer {
     background-color: rgb(22, 0, 99);
 }
 
+.dark-theme #about {
+    background-color: rgb(1, 1, 63);
+}
+
 .dark-theme footer {
     background-color: rgb(13, 13, 56);
 }
@@ -872,10 +951,6 @@ footer {
 
 .dark-theme .footer__logo--img {
     filter: none;
-}
-
-.dark-theme .modal__about {
-    background-color: rgb(1, 1, 63);
 }
 
 .dark-theme .modal__contact,
@@ -893,8 +968,19 @@ footer {
     color: white;
 }
 
-.dark-theme .modal__language {
+.dark-theme .modal__language,
+.dark-theme .profile__placeholder-circle,
+.dark-theme .carousel-item {
     background: rgba(255, 255, 255, 0.1);
+    border-color: rgb(255, 208, 122);
+}
+
+.dark-theme .carousel-item {
+    color: rgb(255, 208, 122);
+}
+
+.dark-theme .profile__placeholder-circle i {
+    color: rgb(255, 208, 122);
 }
 
 .dark-theme .modal__language:hover {
@@ -912,38 +998,67 @@ footer {
     color: white;
 }
 
+.dark-theme .carousel-container {
+    background: rgba(255, 255, 255, 0.03);
+}
+
 /* Responsive Web Design */
 
-@media (max-width: 1009px) {
+@media (max-width: 1024px) {
+    .row {
+        max-width: 900px;
+        padding: 0 24px;
+    }
+
     .title {
         font-size: 52px;
     }
 
-    .header {
-        padding: 0 16px;
+    .about__content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .about__images {
+        justify-content: center;
     }
 }
 
 @media (max-width: 768px) {
+    .nav__container {
+        padding: 0 16px;
+        height: 75px;
+    }
+
     .title {
-        font-size: 42px;
+        font-size: 38px;
         text-align: center;
+        letter-spacing: -0.5px;
     }
 
     .title--secondary {
         text-align: center;
-        font-size: 32px;
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    #landing-page {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 60px;
     }
 
     .header {
         position: static;
-        padding: 0;
+        padding: 40px 16px 20px 16px;
     }
 
     .header__para {
-        font-size: 16px;
+        font-size: 15px;
         text-align: center;
         margin: 0 auto 20px auto;
+        max-width: 100%;
     }
 
     .header__content {
@@ -958,6 +1073,10 @@ footer {
         justify-content: center;
     }
 
+    .carousel-container {
+        margin-top: 20px;
+    }
+
     .modal {
         top: 0;
         left: 0;
@@ -966,14 +1085,13 @@ footer {
         width: 100vw;
         max-width: 100%;
         border-radius: 0;
-        flex-direction: column-reverse;
         overflow-y: auto;
     }
 
     .modal_half {
         width: 100%;
-        padding: 40px 24px;
-        min-height: 50vh;
+        padding: 50px 20px;
+        min-height: 100vh;
     }
 
     .btn__menu {
@@ -1013,15 +1131,23 @@ footer {
     .dark-theme .btn__menu:hover {
         color: rgb(255, 208, 122);
     }
+
+    .mail__btn {
+        width: 54px;
+        height: 54px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 480px) {
     .title {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .title--secondary {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .header__para {
@@ -1045,11 +1171,21 @@ footer {
     }
 
     .section__title {
-        font-size: 32px;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .profile__placeholder-circle {
+        width: 160px;
+        height: 160px;
+    }
+
+    .profile__placeholder-circle i {
+        font-size: 64px;
     }
 
     .modal_half {
-        padding: 30px 20px;
+        padding: 40px 16px;
     }
 
     .modal__language {
@@ -1057,6 +1193,13 @@ footer {
     }
 
     .navy {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .footer__social--list {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        margin: 20px 0;
     }
 }
