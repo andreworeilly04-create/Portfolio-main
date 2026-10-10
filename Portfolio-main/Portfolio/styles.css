@@ -144,18 +144,23 @@ textarea:focus {
     background-color: rgb(156, 156, 255);
 }
 
-/* Navigation */
+/* Navigation - Centered & Spaced Properly */
 
 .nav__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+    padding: 0 40px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     height: 90px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav__logo--wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .toggle-theme,
@@ -1028,7 +1033,7 @@ footer {
 
 @media (max-width: 768px) {
     .nav__container {
-        padding: 0 16px;
+        padding: 0 20px;
         height: 75px;
     }
 
