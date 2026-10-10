@@ -951,19 +951,20 @@ footer {
     color: white;
 }
 
+/* Accent Gold Color Overrides (Placed lower to maintain priority) */
 .dark-theme .navy,
 .dark-theme .navy_blue,
 .dark-theme .about__me--link,
 .dark-theme .about__details .navy_blue,
 .dark-theme #about .section__title .navy_blue,
-.dark-theme #about .modal__sub-title {
-    color: rgb(255, 208, 122);
+.dark-theme #about .modal__sub-title,
+.dark-theme .modal__sub-title {
+    color: rgb(255, 208, 122) !important;
 }
 
 .dark-theme .project__description--sub-title {
     color: rgb(255, 208, 122);
 }
-
 .dark-theme section {
     background-color: rgb(1, 4, 41);
 }
