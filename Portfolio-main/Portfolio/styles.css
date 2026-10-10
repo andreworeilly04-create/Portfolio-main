@@ -144,7 +144,71 @@ textarea:focus {
     background-color: rgb(156, 156, 255);
 }
 
-/* Navigation - Centered & Spaced Properly */
+/* Background Shapes & Scattering */
+
+.shape {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    transition: transform 150ms ease-out;
+    opacity: 0.7;
+}
+
+.shape--0 {
+    top: 15%;
+    left: 5%;
+    width: 50px;
+}
+
+.shape--1 {
+    top: 25%;
+    right: 8%;
+    width: 40px;
+}
+
+.shape--2 {
+    bottom: 25%;
+    left: 8%;
+    width: 60px;
+}
+
+.shape--3 {
+    top: 65%;
+    right: 12%;
+    width: 35px;
+}
+
+.shape--4 {
+    bottom: 12%;
+    right: 15%;
+    width: 45px;
+}
+
+.shape--5 {
+    top: 12%;
+    right: 35%;
+    width: 30px;
+}
+
+.shape--6 {
+    bottom: 35%;
+    left: 4%;
+    width: 55px;
+}
+
+.shape--7 {
+    top: 45%;
+    left: 12%;
+    width: 40px;
+}
+
+.shape--8 {
+    bottom: 18%;
+    right: 38%;
+    width: 50px;
+}
+
+/* Navigation */
 
 .nav__container {
     display: flex;
@@ -156,6 +220,8 @@ textarea:focus {
     margin: 0 auto;
     height: 90px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
 }
 
 .nav__logo--wrapper {
@@ -278,6 +344,7 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .about__me--link {
@@ -290,6 +357,8 @@ textarea:focus {
     margin: 0 auto;
     padding: 0 24px;
     animation: fade-in 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    position: relative;
+    z-index: 2;
 }
 
 .header__container {
@@ -376,6 +445,8 @@ textarea:focus {
     display: flex;
     justify-content: center;
     padding-bottom: 24px;
+    position: relative;
+    z-index: 2;
 }
 
 .scroll {
@@ -405,6 +476,7 @@ textarea:focus {
 }
 
 /* Tech Stack Carousel */
+
 .carousel-container {
     overflow: hidden;
     width: 100%;
@@ -412,6 +484,7 @@ textarea:focus {
     padding: 16px 0;
     white-space: nowrap;
     position: relative;
+    z-index: 2;
 }
 
 .carousel-track {
@@ -446,6 +519,7 @@ textarea:focus {
 }
 
 /* About Section */
+
 #about {
     background-color: rgb(123, 194, 245);
 }
