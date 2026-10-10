@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Andrew O'Reilly's full-stack development portfolio showcasing modern web applications built with React, Next.js, TypeScript, JavaScript, and Firebase."
+    <meta name="description" content="Andrew O'Reilly's full-stack development portfolio showcasing modern web applications built with Next.js, React, TypeScript, JavaScript, and Firebase.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Andrew O'Reilly</title>
+    <title>Andrew O'Reilly | Full-Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/andrew.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="script.js" defer></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
             emailjs.init({
@@ -30,16 +29,10 @@
             </figure>
 
             <ul class="nav_link--list">
-                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black"
-                        href="#about">About</a>
-                </li>
-                <li class="nav__link"><a class="nav__link--anchor link__hover-effect--black"
-                        href="#projects">Projects</a></li>
-                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black"
-                        href="#contact">Contact</a>
-                </li>
-                <li class="nav__link" onclick="toggleContrast()"><a class="nav__link--anchor link__hover-effect--black"
-                        href="#"><i class="fa-solid fa-moon"></i></a></li>
+                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black" href="#about">About</a></li>
+                <li class="nav__link"><a class="nav__link--anchor link__hover-effect--black" href="#projects">Projects</a></li>
+                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black" href="#contact">Contact</a></li>
+                <li class="nav__link" onclick="toggleContrast()"><a class="nav__link--anchor link__hover-effect--black" href="#"><i class="fa-solid fa-moon"></i></a></li>
             </ul>
 
             <button class="btn__menu" onclick="openMenu()">
@@ -47,18 +40,13 @@
             </button>
 
             <ul class="mobile__menu">
-                <li class="nav__link" onclick="toggleModal()"><a class="mobile__link--anchor link__hover-effect--black"
-                        href="#about">About</a>
-                </li>
-                <li class="nav__link"><a class="mobile__link--anchor link__hover-effect--black"
-                        href="#projects">Projects</a></li>
-
-                <li class="nav__link" onclick="toggleModal()"><a class="mobile__link--anchor link__hover-effect--black"
-                        href="#contact">Contact</a>
-                </li>
-                <li><button class="close__menu close__btn--menu" onclick="closeMenu()">
-                <i class="fa-solid fa-circle-xmark"></i>
-                </button>
+                <li class="nav__link" onclick="toggleModal()"><a class="mobile__link--anchor link__hover-effect--black" href="#about">About</a></li>
+                <li class="nav__link"><a class="mobile__link--anchor link__hover-effect--black" href="#projects">Projects</a></li>
+                <li class="nav__link" onclick="toggleModal()"><a class="mobile__link--anchor link__hover-effect--black" href="#contact">Contact</a></li>
+                <li>
+                    <button class="close__menu close__btn--menu" onclick="closeMenu()">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
                 </li>
             </ul>
 
@@ -66,19 +54,13 @@
                 <i class="fa-solid fa-moon"></i>
             </button>
             <button class="toggle-dark" onclick="toggleContrast()">
-                
                 <i class="fa-solid fa-sun"></i>
             </button>
 
             <ul class="dark_link--list">
-                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black"
-                        href="#about">About</a>
-                </li>
-                <li class="nav__link"><a class="nav__link--anchor link__hover-effect--black"
-                        href="#projects">Projects</a></li>
-                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black"
-                        href="#contact">Contact</a>
-                </li>
+                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black" href="#about">About</a></li>
+                <li class="nav__link"><a class="nav__link--anchor link__hover-effect--black" href="#projects">Projects</a></li>
+                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black" href="#contact">Contact</a></li>
                 <li class="nav__link" onclick="toggleContrast()"><a class="nav__link--anchor link__hover-effect--black" href="#"><i class="fa-solid fa-sun"></i></a></li>
             </ul>
 
@@ -91,41 +73,47 @@
             <img src="assets/squiggly.svg" class="shape shape--6" alt="Squiggly">
             <img src="assets/circle.svg" class="shape shape--7" alt="Circle">
             <img src="assets/semi circle.svg" class="shape shape--8" alt="Semi Circle">
-
         </nav>
+
         <div class="header__container">
-        <header class="header">
-            <div class="header__content">
-                <h1 class="title">Hey</h1>
-                <h1 class="title title--secondary">I'm Andrew</h1>
-                <p class="header__para">I'm a <b class="navy">Software Engineer</b> from Gainesville FL, building responsive user focused web applications with React, TypeScript, JavaScript, and a healthy obsession for clean code and small details.<br></p>
-    
-                <p class="header__para">Here's a bit <b class="navy_blue about__me--link" onclick="toggleModal()"> about
-                        me</b></p>
-                <div class="social__list">
-                    <a href="https://www.linkedin.com/in/andrew-o-reilly-886a47384/" target="_blank"
-                        class="social__link click"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/andreworeilly04-create" target="_blank" class="social__link click"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://drive.google.com/file/d/1jZYd388cBy_VnKkAJDlqraIRpgWFy3ca/view?usp=drivesdk" target="_blank" class="social__link click"><i class="fa-solid fa-file-pdf"></i></a>
+            <header class="header">
+                <div class="header__content">
+                    <h1 class="title">Hello,</h1>
+                    <h1 class="title title--secondary">I'm Andrew O'Reilly</h1>
+                    <p class="header__para">
+                        I'm a <b class="navy">Full-Stack Developer</b> based in Gainesville, FL, engineering responsive, high-performance web applications with Next.js, React, TypeScript, and Firebase, driven by a passion for clean code and seamless user experiences.<br>
+                    </p>
+                    <p class="header__para">
+                        Here's a bit <b class="navy_blue about__me--link" onclick="toggleModal()">about me</b>
+                    </p>
+                    <div class="social__list">
+                        <a href="https://www.linkedin.com/in/andrew-o-reilly-886a47384/" target="_blank" class="social__link click" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/andreworeilly04-create" target="_blank" class="social__link click" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://drive.google.com/file/d/1jZYd388cBy_VnKkAJDlqraIRpgWFy3ca/view?usp=drivesdk" target="_blank" class="social__link click" aria-label="Resume"><i class="fa-solid fa-file-pdf"></i></a>
+                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
         </div>
-        <a href="#"> <button class="mail__btn click" onclick="toggleModal()">
-                <i class="fa-solid fa-envelope"></i></button>
-            </a>
-            <div class="scroll__container">
-        <a href="#projects" class="scroll">
-            <div class="scroll__icon click"></div>
+
+        <a href="#" aria-label="Open contact modal">
+            <button class="mail__btn click" onclick="toggleModal()">
+                <i class="fa-solid fa-envelope"></i>
+            </button>
         </a>
+
+        <div class="scroll__container">
+            <a href="#projects" class="scroll" aria-label="Scroll to projects">
+                <div class="scroll__icon click"></div>
+            </a>
         </div>
+
         <div class="modal">
             <div class="modal_half modal__about">
-                <h2 class="modal__title modal__title--about">Here a bit about me.</h2>
-                <h3 class="modal__sub-title modal__sub-title--about">Software Engineer</h3>
-                <p class="modal__para">I'm a  <b class="navy_blue">Software Engineer</b>
-                    that creates <b class="navy_blue">responsive and user-friendly web applications</b>. <br>
+                <h2 class="modal__title modal__title--about">Here's a bit about me.</h2>
+                <h3 class="modal__sub-title modal__sub-title--about">Full-Stack Developer</h3>
+                <p class="modal__para">
+                    I am a <b class="navy_blue">Full-Stack Developer</b> who specializes in building <b class="navy_blue">scalable, responsive, and user-centric web applications</b> from front-end interfaces to robust backend architectures.<br>
+                </p>
                 <div class="modal__images">
                     <figure class="modal__language">
                         <img class="modal__language--img" src="assets/html.svg" alt="HTML5 Logo">
@@ -139,44 +127,44 @@
                         <img class="modal__language--img" src="assets/js.svg" alt="JavaScript Logo">
                         <span class="language__name">JavaScript</span>
                     </figure>
-                     <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/typescript.svg" alt="React Logo">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="assets/typescript.svg" alt="TypeScript Logo">
                         <span class="language__name">TypeScript</span>
                     </figure>
                     <figure class="modal__language">
                         <img class="modal__language--img" src="assets/react.png" alt="React Logo">
                         <span class="language__name">React.js</span>
                     </figure>
-                     <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/next.svg" alt="React Logo">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="assets/next.svg" alt="Next.js Logo">
                         <span class="language__name">Next.js</span>
                     </figure>
                     <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/express.png" alt="React Logo">
+                        <img class="modal__language--img" src="assets/express.png" alt="Express.js Logo">
                         <span class="language__name">Express.js</span>
                     </figure>
                     <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/firebase.svg" alt="React Logo">
+                        <img class="modal__language--img" src="assets/firebase.svg" alt="Firebase Logo">
                         <span class="language__name">Firebase</span>
                     </figure>
                     <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/vite.png" alt="React Logo">
+                        <img class="modal__language--img" src="assets/vite.png" alt="Vite Logo">
                         <span class="language__name">Vite</span>
                     </figure>
                     <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/stripe.png" alt="React Logo">
+                        <img class="modal__language--img" src="assets/stripe.png" alt="Stripe Logo">
                         <span class="language__name">Stripe</span>
                     </figure>
-                     <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/vercel.png" alt="React Logo">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="assets/vercel.png" alt="Vercel Logo">
                         <span class="language__name">Vercel</span>
                     </figure>
                 </div>
             </div>
+
             <div class="modal_half modal__contact">
-                <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
-                <h4 class="modal__sub-title modal__sub-title--contact"> I'm currently open to new opportunities. I'd
-                    love to hear from you!</h4>
+                <h3 class="modal__title modal__title--contact">Let's connect!</h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities and collaborations. I'd love to hear from you!</h4>
                 <form id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
                         <label class="form__item--label">Name</label>
@@ -184,7 +172,7 @@
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Email</label>
-                        <input class="input" name="email" type="text">
+                        <input class="input" name="email" type="email" required>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Message</label>
@@ -199,176 +187,147 @@
                     <p class="success__message">Message sent successfully!</p>
                 </div>
                 <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-            </div> 
+            </div>
         </div>
-
     </section>
+
     <section id="projects">
         <div class="container">
             <div class="row">
                 <h1 class="section__title">
-                    Here are some of my <span class="navy_blue">Projects</span>
+                    Featured <span class="navy_blue">Projects</span>
                 </h1>
                 <ul class="project__list">
-                     <li class="project">
-                        <div class="project__wrapper">
-                            <img src="assets/glowrush.png" class="project__img" alt="Weather App with Next.js">
-                            <div class="project__wrapper--bg">
-                            </div>
-                            <div class="project__description">
-                                <h2 class="project__description--title">
-                                   GlowRush glowstick E-Commerce application built with Next.js TypeScript Firebase, and Stripe
-                                </h2>
-                                <h3 class="project__description--sub-title">
-                                    Next, TypeScript, Firebase, Stripe
-                                </h3>
-                                <p class="project__description--para">
-                                GlowRush is a full-stack e-commerce app built with Next.js and TypeScript, featuring Firebase authentication and database integration, Stripe payments, and organized Next.js API route folders for backend functionality such as authentication and order management.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://glowrush.vercel.app target="_blank"
-                                        class="project__description--link"><i class="fa fa-globe"
-                                            aria-hidden="true"></i></a>
-                                    <a href="https://github.com/andreworeilly04-create/glowrush" target="_blank"
-                                        class="project__description--link"><i class="fa-brands fa-github"
-                                            aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                     <li class="project">
-                        <div class="project__wrapper">
-                            <img src="assets/weather.png" class="project__img" alt="Weather App with Next.js">
-                            <div class="project__wrapper--bg">
-                            </div>
-                            <div class="project__description">
-                                <h2 class="project__description--title">
-                                    Weather App with Next and TypeScript
-                                </h2>
-                                <h3 class="project__description--sub-title">
-                                    Next, TypeScript, OpenWeather
-                                </h3>
-                                <p class="project__description--para">
-                                 A weather app built with Next.js, TypeScript, and OpenWeather API featuring real-time forecasts and smart outfit recommendations based on current conditions.
-
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://weather-app-master-mu.vercel.app" target="_blank"
-                                        class="project__description--link"><i class="fa fa-globe"
-                                            aria-hidden="true"></i></a>
-                                    <a href="https://github.com/andreworeilly04-create/weather-app-master/tree/main/weather-app-master" target="_blank"
-                                        class="project__description--link"><i class="fa-brands fa-github"
-                                            aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                     <li class="project">
-                        <div class="project__wrapper">
-                            <img src="assets/snapcart.jpeg" class="project__img" alt="SnapCart E-commerce App with React and Firebase">
-                            <div class="project__wrapper--bg">
-                            </div>
-                            <div class="project__description">
-                                <h2 class="project__description--title">
-                                    SnapCart E-commerce App with Firebase, React, Express, and Node
-                                </h2>
-                                <h3 class="project__description--sub-title">
-                                    FERN Stack 
-                                </h3>
-                                <p class="project__description--para">
-                                   A FERN stack SnapCart E-commerce Application. Users can create and log in to their accounts, view product categories, add products to their cart, search for products, view their orders and delivery status, cancel orders, and sort products by rating and pricing.
-                                    The application also includes a light and dark mode for users that are light sensitive.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://snapcart-full-beta.vercel.app" target="_blank"
-                                        class="project__description--link"><i class="fa fa-globe"
-                                            aria-hidden="true"></i></a>
-                                    <a href="https://github.com/andreworeilly04-create/snapcart-full" target="_blank"
-                                        class="project__description--link"><i class="fa-brands fa-github"
-                                            aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                   
-                    </li>
-                    
-                    </li>
-                    
-                    </li>
+                    <!-- GlowRush Project -->
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="assets/netflix-clone.png" class="project__img" alt="Netflix Clone">
-                            <div class="project__wrapper--bg">
-                            </div>
+                            <img src="assets/glowrush.png" class="project__img" alt="GlowRush E-commerce Application">
+                            <div class="project__wrapper--bg"></div>
                             <div class="project__description">
                                 <h2 class="project__description--title">
-                                    Netflix Clone with React, Firebase, and TMDB
+                                    GlowRush E-Commerce Platform
                                 </h2>
                                 <h3 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript, React, Firebase, TMDB
+                                    Next.js, TypeScript, Firebase, Stripe
                                 </h3>
                                 <p class="project__description--para">
-                                  A Netflix-style streaming app built with Firebase, React, and TMDB that allows users to sign up or log in, browse popular movies and TV shows, and enjoy a seamless, personalized viewing experience.
+                                    A full-stack e-commerce application featuring secure Firebase user authentication, real-time database integration, Stripe payment processing, and structured API routing for robust order management.
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="https://netflix-mocha-ten.vercel.app" target="_blank"
-                                        class="project__description--link"><i class="fa fa-globe"
-                                            aria-hidden="true"></i></a>
-                                    <a href="https://github.com/andreworeilly04-create/Netflix" target="_blank"
-                                        class="project__description--link"><i class="fa-brands fa-github"
-                                            aria-hidden="true"></i></a>
+                                    <a href="https://glowrush.vercel.app" target="_blank" class="project__description--link" aria-label="Live Demo"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/andreworeilly04-create/glowrush" target="_blank" class="project__description--link" aria-label="GitHub Repository"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
-                         <li class="project">
+                    </li>
+
+                    <!-- Weather App Project -->
+                    <li class="project">
                         <div class="project__wrapper">
-                            <img src="assets/google-clone.jpeg" class="project__img" alt="Google Clone">
-                            <div class="project__wrapper--bg">
-                            </div>
+                            <img src="assets/weather.png" class="project__img" alt="Weather App with Next.js">
+                            <div class="project__wrapper--bg"></div>
                             <div class="project__description">
                                 <h2 class="project__description--title">
-                                    Google Clone
+                                    Next.js Weather Forecasting App
                                 </h2>
                                 <h3 class="project__description--sub-title">
-                                    HTML, CSS, TypeScript 
+                                    Next.js, TypeScript, OpenWeather API
                                 </h3>
                                 <p class="project__description--para">
-                                    A full responsive Google clone built with HTML, CSS, and TypeScript. It replicates the core search experience, including search suggestions, results pages, and dynamic data fetching using typescript.
+                                    A dynamic weather application delivering real-time forecasts and smart, condition-based outfit recommendations leveraging external API integrations.
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="https://google-clone-kappa-eosin.vercel.app" target="_blank"
-                                        class="project__description--link"><i class="fa fa-globe"
-                                            aria-hidden="true"></i></a>
-                                    <a href="https://github.com/andreworeilly04-create/Google-Clone" target="_blank"
-                                        class="project__description--link"><i class="fa-brands fa-github"
-                                            aria-hidden="true"></i></a>
+                                    <a href="https://weather-app-master-mu.vercel.app" target="_blank" class="project__description--link" aria-label="Live Demo"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/andreworeilly04-create/weather-app-master/tree/main/weather-app-master" target="_blank" class="project__description--link" aria-label="GitHub Repository"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
-                             
+                    </li>
+
+                    <!-- SnapCart Project -->
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="assets/snapcart.jpeg" class="project__img" alt="SnapCart E-commerce App">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h2 class="project__description--title">
+                                    SnapCart Full-Stack E-Commerce App
+                                </h2>
+                                <h3 class="project__description--sub-title">
+                                    FERN Stack (Firebase, Express, React, Node)
+                                </h3>
+                                <p class="project__description--para">
+                                    A feature-rich e-commerce platform supporting user authentication, product catalog browsing, dynamic sorting by rating/price, shopping cart management, order tracking/cancellation, and a built-in accessibility theme mode.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://snapcart-full-beta.vercel.app" target="_blank" class="project__description--link" aria-label="Live Demo"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/andreworeilly04-create/snapcart-full" target="_blank" class="project__description--link" aria-label="GitHub Repository"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Netflix Clone Project -->
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="assets/netflix-clone.png" class="project__img" alt="Netflix Clone App">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h2 class="project__description--title">
+                                    Netflix Streaming Clone
+                                </h2>
+                                <h3 class="project__description--sub-title">
+                                    React, Firebase, TMDB API
+                                </h3>
+                                <p class="project__description--para">
+                                    A media streaming web application modeled after Netflix, equipped with user account authentication, categorized movie/show browsing, and a personalized viewing layout powered by the TMDB API.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://netflix-mocha-ten.vercel.app" target="_blank" class="project__description--link" aria-label="Live Demo"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/andreworeilly04-create/Netflix" target="_blank" class="project__description--link" aria-label="GitHub Repository"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Google Clone Project -->
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="assets/google-clone.jpeg" class="project__img" alt="Google Clone App">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h2 class="project__description--title">
+                                    Responsive Google Search Clone
+                                </h2>
+                                <h3 class="project__description--sub-title">
+                                    HTML, CSS, TypeScript
+                                </h3>
+                                <p class="project__description--para">
+                                    A fully responsive replica of the Google search engine featuring search suggestions, dynamic results presentation, and robust data handling implemented with TypeScript.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://google-clone-kappa-eosin.vercel.app" target="_blank" class="project__description--link" aria-label="Live Demo"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/andreworeilly04-create/Google-Clone" target="_blank" class="project__description--link" aria-label="GitHub Repository"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
+
     <footer>
         <div class="container">
             <div class="row footer__row">
-
-
                 <figure>
                     <a href="#landing-page"><img src="assets/AO Logo.png" class="footer__logo--img" alt="AO Logo"></a>
                 </figure>
                 <div class="footer__social--list">
-                    <a href="https://github.com/andreworeilly04-create"
-                        class="footer__social--link link__hover-effect--black link__hover-effect--white"
-                        target="_blank">Github</a>
-                    <a href="https://www.linkedin.com/in/andrew-o-reilly-886a47384"
-                        class="footer__social--link link__hover-effect--black link__hover-effect--white"
-                        target="_blank">LinkedIn</a>
-                    <a href="mailto: andreworeilly04@gmail.com" class="footer__social--link link__hover-effect--black link__hover-effect--white"
-                        target="_blank">Email</a>
-                    <a href="https://drive.google.com/file/d/1jZYd388cBy_VnKkAJDlqraIRpgWFy3ca/view?usp=drivesdk" class="footer__social--link link__hover-effect--black link__hover-effect--white"
-                        target="_blank">Resume</a>
+                    <a href="https://github.com/andreworeilly04-create" class="footer__social--link link__hover-effect--black link__hover-effect--white" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/andrew-o-reilly-886a47384" class="footer__social--link link__hover-effect--black link__hover-effect--white" target="_blank">LinkedIn</a>
+                    <a href="mailto:andreworeilly04@gmail.com" class="footer__social--link link__hover-effect--black link__hover-effect--white" target="_blank">Email</a>
+                    <a href="https://drive.google.com/file/d/1jZYd388cBy_VnKkAJDlqraIRpgWFy3ca/view?usp=drivesdk" class="footer__social--link link__hover-effect--black link__hover-effect--white" target="_blank">Resume</a>
                 </div>
                 <div class="footer__copyright">
                     <p>&copy; 2026 Andrew O'Reilly. All rights reserved.</p>
