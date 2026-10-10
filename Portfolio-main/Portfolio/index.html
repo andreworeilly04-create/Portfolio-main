@@ -29,7 +29,7 @@
             </figure>
 
             <ul class="nav_link--list">
-                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black" href="#about">About</a></li>
+                <li class="nav__link"><a class="nav__link--anchor link__hover-effect--black" href="#about">About</a></li>
                 <li class="nav__link"><a class="nav__link--anchor link__hover-effect--black" href="#projects">Projects</a></li>
                 <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black" href="#contact">Contact</a></li>
                 <li class="nav__link" onclick="toggleContrast()"><a class="nav__link--anchor link__hover-effect--black" href="#"><i class="fa-solid fa-moon"></i></a></li>
@@ -40,9 +40,9 @@
             </button>
 
             <ul class="mobile__menu">
-                <li class="nav__link" onclick="toggleModal()"><a class="mobile__link--anchor link__hover-effect--black" href="#about">About</a></li>
-                <li class="nav__link"><a class="mobile__link--anchor link__hover-effect--black" href="#projects">Projects</a></li>
-                <li class="nav__link" onclick="toggleModal()"><a class="mobile__link--anchor link__hover-effect--black" href="#contact">Contact</a></li>
+                <li class="nav__link"><a class="mobile__link--anchor link__hover-effect--black" href="#about" onclick="closeMenu()">About</a></li>
+                <li class="nav__link"><a class="mobile__link--anchor link__hover-effect--black" href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li class="nav__link" onclick="toggleModal(); closeMenu();"><a class="mobile__link--anchor link__hover-effect--black" href="#contact">Contact</a></li>
                 <li>
                     <button class="close__menu close__btn--menu" onclick="closeMenu()">
                         <i class="fa-solid fa-circle-xmark"></i>
@@ -58,7 +58,7 @@
             </button>
 
             <ul class="dark_link--list">
-                <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black" href="#about">About</a></li>
+                <li class="nav__link"><a class="nav__link--anchor link__hover-effect--black" href="#about">About</a></li>
                 <li class="nav__link"><a class="nav__link--anchor link__hover-effect--black" href="#projects">Projects</a></li>
                 <li class="nav__link" onclick="toggleModal()"><a class="nav__link--anchor link__hover-effect--black" href="#contact">Contact</a></li>
                 <li class="nav__link" onclick="toggleContrast()"><a class="nav__link--anchor link__hover-effect--black" href="#"><i class="fa-solid fa-sun"></i></a></li>
@@ -84,15 +84,33 @@
                         I'm a <b class="navy">Full-Stack Developer</b> based in Gainesville, FL, engineering responsive, high-performance web applications with Next.js, React, TypeScript, and Firebase, driven by a passion for clean code and seamless user experiences.<br>
                     </p>
                     <p class="header__para">
-                        Here's a bit <b class="navy_blue about__me--link" onclick="toggleModal()">about me</b>
+                        Here's a bit <a href="#about" class="navy_blue about__me--link">about me</a>
                     </p>
                     <div class="social__list">
                         <a href="https://www.linkedin.com/in/andrew-o-reilly-886a47384/" target="_blank" class="social__link click" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/andreworeilly04-create" target="_blank" class="social__link click" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://drive.google.com/file/d/1jZYd388cBy_VnKkAJDlqraIRpgWFy3ca/view?usp=drivesdk" target="_blank" class="social__link click" aria-label="Resume"><i class="fa-solid fa-file-pdf"></i></a>
                     </div>
                 </div>
             </header>
+        </div>
+
+        <!-- Tech Stack Carousel Banner -->
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-item"><i class="fa-brands fa-react"></i> React</div>
+                <div class="carousel-item"><i class="fa-solid fa-code"></i> Next.js</div>
+                <div class="carousel-item"><i class="fa-solid fa-file-code"></i> TypeScript</div>
+                <div class="carousel-item"><i class="fa-solid fa-fire"></i> Firebase</div>
+                <div class="carousel-item"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="carousel-item"><i class="fa-brands fa-node"></i> Node.js</div>
+                <!-- Duplicate set for seamless infinite loop -->
+                <div class="carousel-item"><i class="fa-brands fa-react"></i> React</div>
+                <div class="carousel-item"><i class="fa-solid fa-code"></i> Next.js</div>
+                <div class="carousel-item"><i class="fa-solid fa-file-code"></i> TypeScript</div>
+                <div class="carousel-item"><i class="fa-solid fa-fire"></i> Firebase</div>
+                <div class="carousel-item"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="carousel-item"><i class="fa-brands fa-node"></i> Node.js</div>
+            </div>
         </div>
 
         <a href="#" aria-label="Open contact modal">
@@ -102,67 +120,14 @@
         </a>
 
         <div class="scroll__container">
-            <a href="#projects" class="scroll" aria-label="Scroll to projects">
+            <a href="#about" class="scroll" aria-label="Scroll to about section">
                 <div class="scroll__icon click"></div>
             </a>
         </div>
 
+        <!-- Contact Modal Only -->
         <div class="modal">
-            <div class="modal_half modal__about">
-                <h2 class="modal__title modal__title--about">Here's a bit about me.</h2>
-                <h3 class="modal__sub-title modal__sub-title--about">Full-Stack Developer</h3>
-                <p class="modal__para">
-                    I am a <b class="navy_blue">Full-Stack Developer</b> who specializes in building <b class="navy_blue">scalable, responsive, and user-centric web applications</b> from front-end interfaces to robust backend architectures.<br>
-                </p>
-                <div class="modal__images">
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/html.svg" alt="HTML5 Logo">
-                        <span class="language__name">HTML</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/css.svg" alt="CSS3 Logo">
-                        <span class="language__name">CSS</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/js.svg" alt="JavaScript Logo">
-                        <span class="language__name">JavaScript</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/typescript.svg" alt="TypeScript Logo">
-                        <span class="language__name">TypeScript</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/react.png" alt="React Logo">
-                        <span class="language__name">React.js</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/next.svg" alt="Next.js Logo">
-                        <span class="language__name">Next.js</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/express.png" alt="Express.js Logo">
-                        <span class="language__name">Express.js</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/firebase.svg" alt="Firebase Logo">
-                        <span class="language__name">Firebase</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/vite.png" alt="Vite Logo">
-                        <span class="language__name">Vite</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/stripe.png" alt="Stripe Logo">
-                        <span class="language__name">Stripe</span>
-                    </figure>
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="assets/vercel.png" alt="Vercel Logo">
-                        <span class="language__name">Vercel</span>
-                    </figure>
-                </div>
-            </div>
-
-            <div class="modal_half modal__contact">
+            <div class="modal_half modal__contact" style="width: 100%;">
                 <h3 class="modal__title modal__title--contact">Let's connect!</h3>
                 <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities and collaborations. I'd love to hear from you!</h4>
                 <form id="contact__form" onsubmit="contact(event)">
@@ -191,6 +156,77 @@
         </div>
     </section>
 
+    <!-- Dedicated About Me Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row about__row">
+                <h1 class="section__title">
+                    Here's a bit <span class="navy_blue">About Me</span>
+                </h1>
+                <div class="about__content">
+                    <div class="about__img--wrapper">
+                        <div class="profile__placeholder-circle">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="about__details">
+                        <h3 class="modal__sub-title">Full-Stack Developer</h3>
+                        <p class="modal__para">
+                            I am a <b class="navy_blue">Full-Stack Developer</b> who specializes in building <b class="navy_blue">scalable, responsive, and user-centric web applications</b> from front-end user interfaces to robust backend architectures. Based in Gainesville, FL, I build modern web solutions with a keen eye for performance, architecture, and clean code.
+                        </p>
+                        <div class="modal__images">
+                            <figure class="modal__language">
+                                <img class="modal__language--img" src="assets/html.svg" alt="HTML5 Logo">
+                                <span class="language__name">HTML</span>
+                            </figure>
+                            <figure class="modal__language">
+                                <img class="modal__language--img" src="assets/css.svg" alt="CSS3 Logo">
+                                <span class="language__name">CSS</span>
+                            </figure>
+                            <figure class="modal__language">
+                                <img class="modal__language--img" src="assets/js.svg" alt="JavaScript Logo">
+                                <span class="language__name">JavaScript</span>
+                            </figure>
+                            <figure class="modal__language">
+                                <img class="modal__language--img" src="assets/typescript.svg" alt="TypeScript Logo">
+                                <span class="language__name">TypeScript</span>
+                            </figure>
+                            <figure class="modal__language">
+                                <img class="modal__language--img" src="assets/react.png" alt="React Logo">
+                                <span class="language__name">React.js</span>
+                            </figure>
+                            <figure class="modal__language">
+                                <img class="modal__language--img" src="assets/next.svg" alt="Next.js Logo">
+                                <span class="language__name">Next.js</span>
+                            </figure>
+                            <figure class="modal__language">
+                                <img class="modal__language--img" src="assets/express.png" alt="Express.js Logo">
+                                <span class="language__name">Express.js</span>
+                            </figure>
+                            <figure class="modal__language">
+                                <img class="modal__language--img" src="assets/firebase.svg" alt="Firebase Logo">
+                                <span class="language__name">Firebase</span>
+                            </figure>
+                            <figure class="modal__language">
+                                <img class="modal__language--img" src="assets/vite.png" alt="Vite Logo">
+                                <span class="language__name">Vite</span>
+                            </figure>
+                            <figure class="modal__language">
+                                <img class="modal__language--img" src="assets/stripe.png" alt="Stripe Logo">
+                                <span class="language__name">Stripe</span>
+                            </figure>
+                            <figure class="modal__language">
+                                <img class="modal__language--img" src="assets/vercel.png" alt="Vercel Logo">
+                                <span class="language__name">Vercel</span>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <div class="row">
@@ -327,7 +363,6 @@
                     <a href="https://github.com/andreworeilly04-create" class="footer__social--link link__hover-effect--black link__hover-effect--white" target="_blank">GitHub</a>
                     <a href="https://www.linkedin.com/in/andrew-o-reilly-886a47384" class="footer__social--link link__hover-effect--black link__hover-effect--white" target="_blank">LinkedIn</a>
                     <a href="mailto:andreworeilly04@gmail.com" class="footer__social--link link__hover-effect--black link__hover-effect--white" target="_blank">Email</a>
-                    <a href="https://drive.google.com/file/d/1jZYd388cBy_VnKkAJDlqraIRpgWFy3ca/view?usp=drivesdk" class="footer__social--link link__hover-effect--black link__hover-effect--white" target="_blank">Resume</a>
                 </div>
                 <div class="footer__copyright">
                     <p>&copy; 2026 Andrew O'Reilly. All rights reserved.</p>
